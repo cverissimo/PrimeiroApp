@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rousseau.primeiroapp.MainActivity" >
+
+
+    <Button
+        android:text="@string/btn_limpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_limpar"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:onClick="ClickLimpar"/>
+
+    <Button
+        android:text="@string/btn_soma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_soma"
+        android:layout_above="@+id/btn_subtracao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:onClick="ClickSoma"/>
+
+    <Button
+        android:text="@string/btn_subtracao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_subtracao"
+        android:layout_above="@+id/btn_multiplicacao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:onClick="ClickSubtracao"/>
+
+    <Button
+        android:text="@string/btn_multiplicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_multiplicacao"
+        android:layout_above="@+id/btn_divisao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:onClick="ClickMultiplicacao"/>
+
+    <Button
+        android:text="@string/btn_divisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_divisao"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/btn_limpar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:onClick="ClickDivisao"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txt_primeiro_valor"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:cursorVisible="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/txt_primeiro_valor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txt_segundo_valor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:cursorVisible="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/txt_segundo_valor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txt_resultado"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false" />
+
+
+</RelativeLayout>

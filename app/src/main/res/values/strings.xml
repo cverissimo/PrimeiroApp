@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora Básica</string>
+    <string name="usuario">Claudinei Veríssimo de Camargo</string>
+    <string name="btn_processar">Processar</string>
+    <string name="btn_soma">+</string>
+    <string name="btn_multiplicao">x</string>
+    <string name="btn_divisao">/</string>
+    <string name="btn_subtracao">-</string>
+    <string name="btn_limpar">Limpar</string>
+</resources>
